@@ -1,0 +1,141 @@
+@import url(/node_modules/bootstrap/scss/_grid.scss);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans';
+}
+
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./fonts/OpenSans-Light.woff2') format('woff2'),
+        url('./fonts/OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./fonts/OpenSans-ExtraBold.woff2') format('woff2'),
+        url('./fonts/OpenSans-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('./fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./fonts/OpenSans-SemiBold.woff2') format('woff2'),
+        url('./fonts/OpenSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./fonts/OpenSans-Medium.woff2') format('woff2'),
+        url('./fonts/OpenSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('./fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+  font-weight: normal;
+  background: #040405;
+  width: 100vw;
+  height: 100vh;
+}
+
+nav {
+  position: fixed;
+  bottom: 15px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  button {
+    color: white;
+    text-decoration: none;
+    margin:10px;
+    background: transparent;
+    border: transparent;
+    outline: transparent;
+    cursor: pointer;
+    font-size: 16px;
+
+    &.active {
+      color: #FFE453;
+      border-bottom: 2px solid #FFE453;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.mainArea {
+  width: 100%;
+  height: 100%;
+  overflow-x: scroll;
+  display: flex;
+
+  & >  section   { 
+    flex: none;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  img {
+    width: 250px;
+    padding: 20px;
+  }
+  .into {
+    color: white;
+    position: absolute;
+    left: 15%;
+    transform: translate(-0%, 0);
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 15px;
+    }
+    span {
+      height: 5px;
+      width: 5px;
+      background-color: white;
+      display: inline-block;
+    }
+  }
+}
